@@ -17,7 +17,7 @@ def main():
     options, args = parser.parse_args()
     
     global id_prefix
-    id_prefix = options.prefix
+    id_prefix = options.prefix or ''
     
     if len(args) == 0:
         print 'error: Specify a URL'

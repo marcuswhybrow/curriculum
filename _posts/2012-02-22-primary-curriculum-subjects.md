@@ -9,7 +9,7 @@ This area of the site contains the National Curriculum for England at Key Stages
 
 * [History](history)
 * [Geography](geography)
-* [Citizenship](citezenship)
+* [Citizenship](citizenship)
 * [Personal, social and health education (PSHE)](personal-social-and-health-education)
 * [Science](science)
 * [Physical education (PE)](physical-education)

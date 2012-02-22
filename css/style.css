@@ -67,6 +67,9 @@ li p {
     margin: 0;
 }
 
+#page .reset-numbering {
+    counter-reset: li;
+}
 #page {
     counter-reset: li;
 }
@@ -90,9 +93,8 @@ ol.start-2 {
     
 }
 
-#page > ol + p > em {
+#page p > em {
     font-size: 12px;
-/*    font-style: normal;*/
 }
 
 /* Heading */

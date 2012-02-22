@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+
+  <title>{{ page.title }}</title>
+
+  <style type="text/css">
+    {% include css/style.css %}
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <h1 id="title"><a href="/">The School Curriculum</a></h1>
+    {{ content }}
+    
+    <div id="footer">
+      <span class="break">~</span>
+      <div class="small-print">
+        <p>
+          The content presented here is © Crown copyright 2012
+          {% if page.orig_url %}, originally taken from: <br /><a href="{{ page.orig_url }}">{{ page.orig_url }}</a>{% endif %}
+        </p>
+      </div>
+    </div>
+    
+  </div>
+
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  
+  <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker("UA-29393565-1");
+      pageTracker._trackPageview();
+    } catch(err) {}
+  </script>
+</body>
+</html>

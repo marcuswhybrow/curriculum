@@ -1,0 +1,140 @@
+body {
+    /* body reset */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #ffffff;
+    
+    margin-top: 1.0em;
+    font-family: Helvetica, Arial, FreeSans, clean, san-serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+#container {
+    margin: 0 auto;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    max-width: 920px;
+    wrap-word
+}
+
+/* Basic text styling */
+
+h1 {
+    font-size: 33px;
+    line-height: 45px;
+    padding: 2px 0 0 0;
+    border-bottom: 1px solid #CCC;
+}
+
+h2 {
+    display: block;
+    font-size: 24px;
+    color: #000;
+    border-bottom: 1px solid #CCC;
+    margin: 20px 0 10px;
+    line-height: 38px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #333;
+    line-height: 28px;
+}
+
+a {
+    color: #4183C4;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+pre {
+    background: #000;
+    color: #fff;
+    padding: 15px;
+}
+
+hr {
+    border: 0;
+    width: 80%;
+    border-bottom: 1px solid #aaa
+}
+
+/* Heading */
+
+h1#title {
+    border-bottom: none;
+    margin-bottom: 5px;
+    line-height: 1em;
+}
+h1#title a {
+    color: #333;
+    line-height: 1em;
+}
+h1#title a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+ul#breadcrumbs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+ul#breadcrumbs li {
+    float: left;
+    padding-right: 5px;
+}
+
+/* Footer */
+
+#footer {
+    padding-bottom: 40px;
+}
+#footer .break {
+    color: #888;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+}
+#footer .small-print {
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    opacity: 0.6;
+    color: gray;
+    font-style: italic;
+    -webkit-transition: opacity 0.1s linear;
+}
+#footer:hover .small-print {
+    opacity: 1;
+}
+
+
+/* Clearfix class */
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}

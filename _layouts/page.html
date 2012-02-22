@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<ul id="breadcrumbs" class="clearfix">
+    {% for category in page.categories %}
+        <li><a href="/{{ category }}">{{ category | replace:'-',' ' | capitalize }}</a> /</li>
+    {% endfor %}
+    <li><a href="">{{ page.title | capitalize }}</a></li>
+</ul>
+
+<div id="page">
+    {{ content }}
+</div>

@@ -3,6 +3,9 @@ layout: page
 orig_url: 
 ---
 
+<!-- Remove when notes have been added -->
+{% include has-no-notes.html %}
+
 <h1 id="key-stage-1">Key Stage 1</h1>
 
 <h1 id="key-stage-2" class="reset-numbering">Key Stage 2</h1>

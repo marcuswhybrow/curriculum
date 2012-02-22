@@ -83,19 +83,25 @@ p.notification {
 
 
 #page .reset-numbering {
-    counter-reset: li;
+    counter-reset: number;
 }
+#page .reset-lettering {
+    counter-reset: alpha;
+}
+
+
 #page {
-    counter-reset: li;
+    counter-reset: number;
 }
 #page>ol>li {
     position: relative;
     list-style: none;
     padding-left: 5px;
+    counter-reset: alpha;
 }
 #page>ol>li:before {
-    content: counter(li) '.';
-    counter-increment: li;
+    content: counter(number) '.';
+    counter-increment: number;
     
     position: absolute;
     left: -1.3em;
@@ -103,6 +109,19 @@ p.notification {
 
 ol ol {
     list-style-type: lower-alpha;
+}
+
+#page ol ol li {
+    position: relative;
+    list-style: none;
+    padding-left: 5px;
+}
+#page ol ol li:before {
+    content: counter(alpha, lower-alpha) '.';
+    counter-increment: alpha;
+    
+    position: absolute;
+    left: -1.3em;
 }
 
 ol.start-2 {

@@ -63,6 +63,38 @@ hr {
     border-bottom: 1px solid #aaa
 }
 
+li p {
+    margin: 0;
+}
+
+#page {
+    counter-reset: li;
+}
+#page>ol>li {
+    position: relative;
+    list-style: none;
+}
+#page>ol>li:before {
+    content: counter(li) '.';
+    counter-increment: li;
+    
+    position: absolute;
+    left: -1.3em;
+}
+
+ol ol {
+    list-style-type: lower-alpha;
+}
+
+ol.start-2 {
+    
+}
+
+#page > ol + p > em {
+    font-size: 12px;
+/*    font-style: normal;*/
+}
+
 /* Heading */
 
 h1#title {

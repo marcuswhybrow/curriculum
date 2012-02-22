@@ -3,7 +3,7 @@ layout: default
 ---
 <ul id="breadcrumbs" class="clearfix">
     {% for category in page.categories %}
-        <li><a href="/{{ category }}">{{ category | replace:'-',' ' | capitalize }}</a> /</li>
+        <li><a href="{{ site.baseurl }}/{{ category }}">{{ category | replace:'-',' ' | capitalize }}</a> /</li>
     {% endfor %}
     <li><a href="">{{ page.title | capitalize }}</a></li>
 </ul>

@@ -5,20 +5,24 @@
 
   <title>{{ page.title }}</title>
   
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="/curriculum/css/style.css" />
 </head>
 
 <body>
   <div id="container">
     <h1 id="title"><a href="{{ site.baseurl }}">The School Curriculum</a></h1>
-    {{ content }}
+    
+    <ul id="breadcrumbs" class="clearfix">
+      <li>404 Page Not Found</li>
+    </ul>
+    
+    <p>This page does not exist (possibly: yet.)</p>
     
     <div id="footer">
       <span class="break">~</span>
       <div class="small-print">
         <p>
           The content presented here is © Crown copyright 2012
-          {% if page.orig_url %}, originally taken from: <br /><a href="{{ page.orig_url }}">{{ page.orig_url }}</a>{% endif %}
         </p>
       </div>
     </div>

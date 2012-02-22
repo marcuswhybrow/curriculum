@@ -8,11 +8,16 @@ import urllib2
 import re
 import htmlentitydefs
 
+id_prefix = ''
+
 def main():
     parser = OptionParser()
-    parser.add_option('-f', '--file')
+    parser.add_option('-p', '--prefix')
 
-    opts, args = parser.parse_args()
+    options, args = parser.parse_args()
+    
+    global id_prefix
+    id_prefix = options.prefix
     
     if len(args) == 0:
         print 'error: Specify a URL'
@@ -29,7 +34,7 @@ def main():
     
     print scrape_url(url)
 
-def scrape_url(url):
+def scrape_url(url, id_prefix=''):
     page = urllib2.urlopen(url)
     soup = BeautifulSoup(page)
     
@@ -60,7 +65,7 @@ def convert_tag(tag):
     elif isheader(tag.name):
         return '<%(tag)s id="%(id)s">%(title)s</%(tag)s>' % {
             'tag': tag.name,
-            'id': string_to_id(html2text(tag.string).rstrip()),
+            'id': id_prefix + string_to_id(html2text(tag.string).rstrip()),
             'title': html2text(tag.string).rstrip(),
         }
     elif tag.name == 'ul':
